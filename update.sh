@@ -54,6 +54,22 @@ cat >> $buildHostFile <<EOL
 127.0.0.1  api.tuya.com
 ::1  api.tuya.com
 EOL
+echo >> $buildHostFile
+
+echo 'Add broadlink hosts'
+cat >> $buildHostFile <<EOL
+# Broadlink RM-Mini
+
+127.0.0.1  10039main.broadlink.com.cn
+127.0.0.1  10039backup.broadlink.com.cn
+127.0.0.1  10039tcp.broadlink.com.cn
+127.0.0.1  cloud.broadlink.com.cn
+::1  10039main.broadlink.com.cn
+::1  10039backup.broadlink.com.cn
+::1  10039tcp.broadlink.com.cn
+::1  cloud.broadlink.com.cn
+EOL
+echo >> $buildHostFile
 
 cd ..
 mkdir $distFolder
