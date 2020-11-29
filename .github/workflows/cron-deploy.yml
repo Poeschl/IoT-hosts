@@ -1,0 +1,46 @@
+name: Deploy
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build hosts file
+        run: ./update.sh
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: host-file
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get host file
+        uses: actions/download-artifact@v2
+        with:
+          name: host-file
+
+      - name: Commit host on dist branch
+        run: |
+          git init
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Deploy ${GITHUB_SHA}"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: dist
+          force: true

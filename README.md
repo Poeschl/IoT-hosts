@@ -1,5 +1,5 @@
 # Poeschl IoT hosts 
-[![Travis (.org)](https://img.shields.io/travis/Poeschl/IoT-hosts.svg)](https://travis-ci.org/Poeschl/IoT-hosts)
+[![Last Deploy status](https://img.shields.io/github/workflow/status/Poeschl/IoT-hosts/Deploy)](https://github.com/Poeschl/IoT-hosts/actions?query=workflow%3ADeploy)
 
 This repository generates a hosts file for the addresses of my running IoT devices.
 It use it as a fallback on my [Pi-hole](https://pi-hole.net/) in case a custom firmware misses on of it.
