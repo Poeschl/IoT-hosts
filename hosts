@@ -1,0 +1,117 @@
+#Poeschl IoT device blocking list
+#It should be blocking not intended outgoing traffic from my running IoT devices.
+#Build date: Mon Feb  1 00:33:05 UTC 2021
+
+#Valetudo
+
+127.0.0.1  ot.io.mi.com
+::1  ot.io.mi.com
+127.0.0.1  ott.io.mi.com
+::1  ott.io.mi.com
+127.0.0.1  us.ot.io.mi.com
+::1  us.ot.io.mi.com
+127.0.0.1  us.ott.io.mi.com
+::1  us.ott.io.mi.com
+127.0.0.1  sg.ot.io.mi.com
+::1  sg.ot.io.mi.com
+127.0.0.1  sg.ott.io.mi.com
+::1  sg.ott.io.mi.com
+127.0.0.1  st.ot.io.mi.com
+::1  st.ot.io.mi.com
+127.0.0.1  st.ott.io.mi.com
+::1  st.ott.io.mi.com
+127.0.0.1  de.ot.io.mi.com
+::1  de.ot.io.mi.com
+127.0.0.1  de.ott.io.mi.com
+::1  de.ott.io.mi.com
+127.0.0.1  ru.ot.io.mi.com
+::1  ru.ot.io.mi.com
+127.0.0.1  ru.ott.io.mi.com
+::1  ru.ott.io.mi.com
+127.0.0.1  in.ot.io.mi.com
+::1  in.ot.io.mi.com
+127.0.0.1  in.ott.io.mi.com
+::1  in.ott.io.mi.com
+127.0.0.1  tw.ot.io.mi.com
+::1  tw.ot.io.mi.com
+127.0.0.1  tw.ott.io.mi.com
+::1  tw.ott.io.mi.com
+127.0.0.1  ea.ot.io.mi.com
+::1  ea.ot.io.mi.com
+127.0.0.1  ea.ott.io.mi.com
+::1  ea.ott.io.mi.com
+127.0.0.1  pv.ot.io.mi.com
+::1  pv.ot.io.mi.com
+127.0.0.1  pv.ott.io.mi.com
+::1  pv.ott.io.mi.com
+127.0.0.1  cdn.cnbj0.files.fds.api.xiaomi.com
+::1  cdn.cnbj0.files.fds.api.xiaomi.com
+127.0.0.1  cnbj0.fds.api.xiaomi.com
+::1  cnbj0.fds.api.xiaomi.com
+127.0.0.1  cnbj2.fds.api.xiaomi.com
+::1  cnbj2.fds.api.xiaomi.com
+127.0.0.1  awsbj0.fds.api.xiaomi.com
+::1  awsbj0.fds.api.xiaomi.com
+127.0.0.1  awsbj0-files.fds.api.xiaomi.com
+::1  awsbj0-files.fds.api.xiaomi.com
+127.0.0.1  awsusor0.fds.api.xiaomi.com
+::1  awsusor0.fds.api.xiaomi.com
+127.0.0.1  awsusor0-files.fds.api.xiaomi.com
+::1  awsusor0-files.fds.api.xiaomi.com
+127.0.0.1  awssgp0.fds.api.xiaomi.com
+::1  awssgp0.fds.api.xiaomi.com
+127.0.0.1  awssgp0-files.fds.api.xiaomi.com
+::1  awssgp0-files.fds.api.xiaomi.com
+127.0.0.1  awsde0.fds.api.xiaomi.com
+::1  awsde0.fds.api.xiaomi.com
+127.0.0.1  awsde0-files.fds.api.xiaomi.com
+::1  awsde0-files.fds.api.xiaomi.com
+127.0.0.1  ksyru0-eco.fds.api.xiaomi.com
+::1  ksyru0-eco.fds.api.xiaomi.com
+127.0.0.1  ksyru0-eco-files.fds.api.xiaomi.com
+::1  ksyru0-eco-files.fds.api.xiaomi.com
+127.0.0.1  awsind0-eco.fds.api.xiaomi.com
+::1  awsind0-eco.fds.api.xiaomi.com
+127.0.0.1  awsind0-eco-files.fds.api.xiaomi.com
+::1  awsind0-eco-files.fds.api.xiaomi.com
+
+# Alfawise power plugs + App (Tuya cloud)
+
+127.0.0.1  a1.tuyacn.com
+127.0.0.1  a1.tuyaeu.com
+127.0.0.1  a1.tuyaus.com
+::1  a1.tuyacn.com
+::1  a1.tuyaeu.com
+::1  a1.tuyaus.com
+127.0.0.1  a.gw.tuyacn.com
+127.0.0.1  a.gw.tuyaeu.com
+127.0.0.1  a.gw.tuyaus.com
+::1  a.gw.tuyacn.com
+::1  a.gw.tuyaeu.com
+::1  a.gw.tuyaus.com
+127.0.0.1  mq.mb.tuyacn.com
+127.0.0.1  mq.mb.tuyaeu.com
+127.0.0.1  mq.mb.tuyaus.com
+::1  mq.mb.tuyacn.com
+::1  mq.mb.tuyaeu.com
+::1  mq.mb.tuyaus.com
+127.0.0.1  a.gw.tuyacn.com
+127.0.0.1  a.gw.tuyaeu.com
+127.0.0.1  a.gw.tuyaus.com
+::1  a.gw.tuyacn.com
+::1  a.gw.tuyaeu.com
+::1  a.gw.tuyaus.com
+127.0.0.1  api.tuya.com
+::1  api.tuya.com
+
+# Broadlink RM-Mini
+
+127.0.0.1  10039main.broadlink.com.cn
+127.0.0.1  10039backup.broadlink.com.cn
+127.0.0.1  10039tcp.broadlink.com.cn
+127.0.0.1  cloud.broadlink.com.cn
+::1  10039main.broadlink.com.cn
+::1  10039backup.broadlink.com.cn
+::1  10039tcp.broadlink.com.cn
+::1  cloud.broadlink.com.cn
+
